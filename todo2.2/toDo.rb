@@ -82,10 +82,10 @@ class Todo
         puts "You wanna pass it to json file (y / n) ?"
         answer = gets.chomp
         if answer == "y"
-          @todo.save_jo
-          @todo.prompt
+            @todo.save_jo
+            @todo.prompt
           else
-          @todo.prompt
+            @todo.prompt
         end
       elsif answer == "e"
         @todo = Todo.new

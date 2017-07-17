@@ -1,3 +1,4 @@
+require 'colorize'
 
 class Item
   attr_accessor :name
@@ -16,7 +17,11 @@ class Item
   end
   
   def display
-    @name
+    if done? == true
+      @name.colorize(:green)
+    else
+      @name.colorize(:yellow)
+    end
   end
   
   # input: - [x] Love Ruby
