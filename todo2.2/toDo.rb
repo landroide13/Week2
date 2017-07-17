@@ -34,9 +34,6 @@ class Todo
       @my_list.display_undone
     end
 
-    def mark_done
-
-    end
 
     def save_jo
       my_file = {item:@item ,list:@list}.to_json

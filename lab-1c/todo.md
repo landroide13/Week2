@@ -1,0 +1,9 @@
+- [ ] Learn Numbers
+- [ ] Learn Strings
+- [ ] Learn Variables
+- [ ] Learn Hash
+- [ ] Learn Methods
+- [ ] Learn Class
+- [ ] Learn File Reading
+- [x] Learn Sinatra
+- [ ] Finish Current Lab
