@@ -49,22 +49,34 @@ class List
 
 
   def display_as_table
+    rows = []
+    puts "The list of :#{name}"
     @items.each do |item|
       if item.done?
-        rows = []
-        rows << [[x], "#{item.name}"]
-        else
-        rows << [[ ], "#{item.name}"]
+        rows << ["[x]", "#{item.display}"]
+      else
+        rows << ["[ ]", "#{item.display}"]
+      end
       end
       table = Terminal::Table.new(rows: rows)
       puts table
-  end
-  end  
+    end  
 
 end
 
+it1=Item.new("buy apples",true)
+it2=Item.new("buy oat",false)
+it3=Item.new("church",true)
+it4=Item.new("coffee",false)
+puts it1.display
+puts it2.display
+puts it3.display
+puts it4.display
 
 
+list1=List.new("sunday",[it1,it2,it3,it4])
+
+list1.display_as_table
 
 
 
