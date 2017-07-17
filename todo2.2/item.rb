@@ -31,3 +31,8 @@ class Item
     Item.new(name, done)
   end
 end
+
+#it1=Item.new("buy apples",true)
+#puts it1.display
+
+

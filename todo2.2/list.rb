@@ -1,5 +1,6 @@
 
 require_relative 'item'
+require 'terminal-table'
 
 class List
   attr_accessor  :name , :items
@@ -46,4 +47,28 @@ class List
       end
    end
 
+
+  def display_as_table
+    @items.each do |item|
+      if item.done?
+        rows = []
+        rows << [[x], "#{item.name}"]
+        else
+        rows << [[ ], "#{item.name}"]
+      end
+      table = Terminal::Table.new(rows: rows)
+      puts table
+  end
+  end  
+
 end
+
+
+
+
+
+
+
+
+
+
