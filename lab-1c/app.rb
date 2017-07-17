@@ -5,7 +5,8 @@ require 'sinatra'
 #Bundler.require # this line will require all the gems in Gemfile
 
 get "/lines" do
+  "<h1 style='color:red'>Hello Sinatra</h1>"
   @list = List.new("todo.md")
-  @list.each 
+  
 end
 
