@@ -22,29 +22,35 @@ class List
     puts "Display the list : #{name}"
     @items.each do |item|
       if item.done?
-        puts " -[x] #{item.name} "
+        puts " -[x] #{item.display} "
       else
-        puts " -[ ] #{item.name} "
+        puts " -[ ] #{item.display} "
       end
     end
  end 
 
  def display_done
+    rows = []  
     puts "Display Done ones :"
     @items.each do |item|
       if item.done?
-        puts "[x] #{item.name}"
+        rows << ["[x]","#{item.display}"]
         end
       end
+      table = Terminal::Table.new(rows: rows)
+      puts table
    end
     
- def display_undone   
+ def display_undone 
+    rows = []  
     puts "The unDone ones :" 
     @items.each do |item|
-      if item.done?
-        puts "[ ] #{item.name}"
+      if !item.done?
+         rows << ["[ ]", "#{item.display}"]
         end
       end
+      table = Terminal::Table.new(rows: rows)
+      puts table
    end
 
 
@@ -76,8 +82,10 @@ puts it4.display
 
 list1=List.new("sunday",[it1,it2,it3,it4])
 
-list1.display_as_table
-
+#list1.display_as_table
+list1.display_undone
+list1.display_done
+list1.display
 
 
 
