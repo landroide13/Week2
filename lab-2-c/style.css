@@ -11,37 +11,52 @@ body{
 
 h1{
   color:#fff;
+  font-size: 3em;
   margin-left: 25px;
 }
 
 h2{
  margin-top: 8px; 
  margin-left: 15px;
+ padding-top: 10px;
 }
 
 .square{
   margin-left: 35px;
   height: 70%;
-  width: 35%;
-  background-color: darkgray;
-  /*background-color: #B3B8BC;*/
+  width: 28%;
+  background-color:#DDE3E8;
+  /*background-color: #f7f7f7;*/
   border-radius: 3px;
 }
 
 .item{
   margin: 5px 15px 5px 15px;
-  padding: 5px 10px 5px 0px;
-  background-color: aliceblue;
-  box-shadow: 0px 1px 0px 0px;
+  padding: 5px 10px 5px 5px;
+  background-color:#fff;
+  box-shadow: 0px 0.8px 0px 0px;
   border-radius: 5px;
 }
 
-input{
+.textIn{
   width: 99%;
   height: 30px;
-  background-color: darkgray;
-  
+  background-color:#f7f7f7;
+  color: #000;
+  border-block-end-style: none;
 }
+
+button{
+  margin: 0px 0px 0px 250px;
+  background-color: cornflowerblue;
+}
+
+
+.btn{
+  margin: 0px 0px 0px 250px;
+  background-color: cornflowerblue;
+}
+
 
 
 
