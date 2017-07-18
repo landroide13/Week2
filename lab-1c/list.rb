@@ -15,8 +15,7 @@ class List
       html << "<li>"+line +"</li>"
       html << Item.new_from_line(line).display_html
       end
-
-    html << "</ul>"
+      html << "</ul>"
     end
 end
 
