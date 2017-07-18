@@ -2,15 +2,14 @@
 body{
   margin: 0;
   padding: 0;
-  /*background-color: lightskyblue;*/
   background-color: #1CA5DB;
   font-family: sans-serif;
 }
 
 h1{
   color:#fff;
-  font-size: 3em;
-  margin-left: 25px;
+  font-size: 2em;
+  margin-left: 27px;
 }
 
 h2{
@@ -21,16 +20,16 @@ h2{
 
 .square{
   margin-left: 35px;
-  height: 25%;
+  height: 20%;
   width: 28%;
   background-color:#DDE3E8;
-  /*background-color: #f7f7f7;*/
   border-radius: 3px;
 }
 
 .item{
   margin: 5px 15px 5px 15px;
-  padding: 5px 10px 5px 5px;
+  padding: 5px 15px 5px 5px;
+  text-align: inline-block;
   background-color:#fff;
   box-shadow: 0px 0.8px 0px 0px;
   border-radius: 5px;
@@ -42,16 +41,18 @@ h2{
   height: 30px;
   background-color:#DDE3E8;
   color: #000;
-  border-block-end-style: none;
+  border-style: none;
 }
 
 
 .btn{
   color: #fff;
   font-weight: bold;
-  margin: 0px 0px 0px 250px;
+  font-size: 15px;
+  margin: -25px 0px 5px 250px;
   background-color: #1CA5DB;
   border-style: none;
+  border-radius: 3px;
 }
 
 
