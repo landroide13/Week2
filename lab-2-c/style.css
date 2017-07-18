@@ -59,9 +59,13 @@ p{
   background-color: #1CA5DB;
   border-style: none;
   border-radius: 3px;
+  cursor: pointer;
   
 }
 
+.btn:hover{
+  background-color: yellow;
+}
 
 
 
