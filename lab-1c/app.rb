@@ -7,6 +7,7 @@ require 'sinatra'
 get "/lines" do
   "<h1 style='color:red'>Hello Sinatra</h1>"
   @list = List.new("todo.md")
+  @list.display_html
   
 end
 
