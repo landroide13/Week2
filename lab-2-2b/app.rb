@@ -7,6 +7,17 @@ get "/" do
 end
 
 
+get "/about" do
+  name = "Your name here"
+  erb :"about.html", locals: {name: name}
+end
+
+
+
+
+
+
+
 
 
 
