@@ -8,14 +8,20 @@ require 'erb'
 
 
 get "/about" do
-   
   erb :"about.html" ,  layout: :"layout.html"
 end
 
 
 get "/trolo" do
-   name = "Your name here"
-  erb :"trolo.html" , locals:{name:name} , layout: :"layout.html"
+   my_items = [
+    {name: "Learn Strings", done: false},
+    {name: "Learn Hash", done: true},
+    {name: "Learn Variables", done: true},
+    {name: "Learn Methods", done: true},
+    {name: "Learn ERB", done: true},
+    {name: "Learn Partials", done: true},
+  ]
+  erb :"trolo.html", layout: :"layout.html", locals: {items: my_items}
 end
 
 
