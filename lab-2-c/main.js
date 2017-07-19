@@ -3,12 +3,11 @@
 
 (()=>{
 
-element.addEventListener("click", done_click);
+ element.addEventListener("onclick", done_click);
 
-function done_click(){
-   document.getElementsByClassName('btn').style.color = grey
-}
-
+ function done_click(){
+   document.getElementsByClassName("btn").style.color="grey"
+  } 
 
 })()
 
