@@ -1,12 +1,12 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #1CA5DB;
+  background-color: #fff;
   font-family: sans-serif;
 }
 
 h1{
-  color:#fff;
+  color:#1CA5DB;
   font-size: 2em;
   margin-left: 27px;
 }
@@ -15,6 +15,35 @@ h2{
  margin-top: 8px; 
  margin-left: 15px;
  padding-top: 10px;
+}
+
+.header-logo{
+ width: 20px;
+ height: 20px;
+ 
+}
+
+.nav-bar{
+ margin-top: -190px; 
+ background-color:#1CA5DB;
+ width: 100%; 
+ height: 100px;
+ text-align: center;
+}
+
+.inline {
+  float: none;
+  display: inline-block;
+  margin-right: -4px;
+}
+
+.noList {
+  margin: 0;
+  padding: 0;
+}
+
+.large-pd{
+  padding: 5px 10px;
 }
 
 p{
@@ -80,6 +109,7 @@ ul{
 li{
   font-size: 19px;
   color: #DDE3E8;
+  list-style-type: none
 }
 
 

@@ -8,8 +8,8 @@ require 'erb'
 
 
 get "/about" do
-   name = "Your name here"
-  erb :"about.html" , locals:{name:name} , layout: :"layout.html"
+   
+  erb :"about.html" ,  layout: :"layout.html"
 end
 
 
