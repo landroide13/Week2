@@ -67,9 +67,25 @@ p{
 }
 
 
-.img-cont{
-  float: center;
+.front{
+  margin: 100px 400px 100px 200px;
+  text-align: center;
   
 }
+
+ul{
+  list-style: none;
+}
+
+li{
+  font-size: 19px;
+  color: #DDE3E8;
+}
+
+
+
+
+
+
 
 
