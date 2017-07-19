@@ -13,9 +13,9 @@ get "/about" do
 end
 
 
-get "/trello" do
+get "/trolo" do
    name = "Your name here"
-  erb :"trello.html" , locals:{name:name} , layout: :"layout.html"
+  erb :"trolo.html" , locals:{name:name} , layout: :"layout.html"
 end
 
 

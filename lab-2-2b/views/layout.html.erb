@@ -2,23 +2,16 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="/styles/app.css">
+    <link rel="stylesheet" type="text/css" href="/styles/header.css">
   </head>
   <body>
 
   <div id="header">
-  <a class="header-logo">
+  <a href="/" class="header-logo">
     <img src="/images/duck.png" alt="logo">
-  </a>
+     Trolo
+   </a>
  </div>
-
- <nav class="nav-bar inline large-pd">
-   <ul class="noList">
-    <li class="inline"><a href="/">Home</a></li>
-    <li class="inline"><a href="/trello">Trello</a></li>
-    <li class="inline"><a href="/about">About</a></li>
-    </ul>
-   </nav>
-
 
     <%= yield %>
   </body>

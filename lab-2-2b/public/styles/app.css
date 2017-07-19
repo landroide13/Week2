@@ -17,10 +17,10 @@ h2{
  padding-top: 10px;
 }
 
-.header-logo{
- width: 20px;
- height: 20px;
- 
+
+.img-main{
+  width: 90px;
+  height: 50px;
 }
 
 .nav-bar{
@@ -31,20 +31,6 @@ h2{
  text-align: center;
 }
 
-.inline {
-  float: none;
-  display: inline-block;
-  margin-right: -4px;
-}
-
-.noList {
-  margin: 0;
-  padding: 0;
-}
-
-.large-pd{
-  padding: 5px 10px;
-}
 
 p{
 
@@ -102,9 +88,7 @@ p{
   
 }
 
-ul{
-  list-style: none;
-}
+
 
 li{
   font-size: 19px;
@@ -112,8 +96,11 @@ li{
   list-style-type: none
 }
 
-
-
+.be-blue{
+  color: #1CA5DB;
+  font-size: 20px;
+  text-decoration-style: none;
+}
 
 
 
