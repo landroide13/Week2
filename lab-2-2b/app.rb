@@ -3,13 +3,14 @@ require 'erb'
 
 
 get "/" do
-  erb :index
+  name="Hello"
+  erb :"index.html" locals:{name:name}
 end
 
 
 get "/about" do
-  name = "Your name here"
-  erb :"about.html", locals: {name: name}
+   name = "Your name here"
+  erb :"about.html" , locals:{name:name}
 end
 
 
