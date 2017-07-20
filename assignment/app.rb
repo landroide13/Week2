@@ -1,25 +1,31 @@
-require 'sinatra'
-require 'erb'
+require "bundler/setup"
+Bundler.require
 
 
  get "/" do
-  erb :"index.html" ,layout: :"layout.html"
- end
+  lines = File.read("todo.md").split("\n")
 
+  items = lines.map do |line|
+    status = line[3] == "x" ? "done" : "undone"
+    name = line[5..-1]
 
-get "/about" do
-  erb :"about.html" ,  layout: :"layout.html"
+    {name: name, status: status}
+  end
+  erb :"trolo.html" , locals:{items:items}
 end
 
 
-get "/trolo" do
-   my_items = [
-    {name: "Learn Strings", done: false},
-    {name: "Learn Hash", done: true},
-    {name: "Learn Variables", done: true},
-    {name: "Learn Methods", done: true},
-    {name: "Learn ERB", done: true},
-    {name: "Learn Partials", done: true},
-  ]
-  erb :"trolo.html", layout: :"layout.html", locals: {items: my_items}
+post '/submit' do
+  new_item = {name: params["item_name"], status: params["done"]}
+  
+  File.open("todo.md","a") do |f|
+    if new_item[:status]
+    f << "\n"
+    f << "- [x]"+new_item[:name]
+    else
+    f << "\n"
+    f << "- [ ]"+new_item[:name]
+    end
+    redirect to("/")
+  end
 end
