@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Lab 2-3b</title>
+    <link href="/styles/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    
+    <h1>Trolo</h1>
+
+<div class="square">
+
+  <h2>Today</h2>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Hash"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Class"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Procs"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn OOP"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done" >
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Array"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Methods"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done" >
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Halm"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done">
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Slim"} %></div>
+  </div>
+
+  <div class="item">
+      <input class="btn" type="submit" value="Done" >
+      <div class="item-text"><%= erb :"_item.html", locals: {name: "Learn Rails"} %></div>
+  </div>
+
+  <input class="textIn" type="text" placeholder="Add a card..">
+
+</div>
+
+
+  </body>
+</html>
