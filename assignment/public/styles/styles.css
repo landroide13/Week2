@@ -18,12 +18,6 @@ h2{
 }
 
 
-.img-main{
-  width: 90px;
-  height: 50px;
-}
-
-
 .square{
   margin-left: 35px;
   height: 20%;
@@ -72,11 +66,8 @@ h2{
 
 .front{
   margin: 100px 400px 100px 200px;
-  text-align: center;
-  
+  text-align: center; 
 }
-
-
 
 li{
   font-size: 19px;
