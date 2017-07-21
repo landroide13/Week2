@@ -2,7 +2,7 @@
   <head>
     <title>Lab 2-3b</title>
     
-    <link rel="stylesheet" href="/styles/styles.css">
+   <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
   </head>
   <body>
     
@@ -12,16 +12,10 @@
 
   <h2>Today</h2>
 
-  <!-->
-  <div class="item">
-      <button class="btn" value="Done"></button>
-      <div class="item-text"><%= params %></div>
-  </div>  -->
-
   <ul>
   <% items.each do |item| %>
     <li class="<%= item[:status] %>">
-      <%= item[:name] %>
+      <%= item[:name] %><input class="btn" type="submit" value="done">
     </li>
   <% end %>
 </ul>  
