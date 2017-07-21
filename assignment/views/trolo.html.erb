@@ -15,15 +15,16 @@
   <ul>
   <% items.each do |item| %>
     <li class="<%= item[:status] %>">
-      <%= item[:name] %><input class="btn" type="submit" value="<%=item[:status] %>">
+      <%= item[:name] %><input class="btn" type="submit" value="<%= item[:status] %>">
     </li>
   <% end %>
 </ul>  
 
 
-  <form acttion="/add" methods="post">
+  <form action="/add" method="post">
+
   <input type="submit" class="btn">
-  <input class="textIn" type="text" placeholder="Add a..">
+  <input class="textIn" type="text" name="task" placeholder="Add a..">
 
   </form>
 

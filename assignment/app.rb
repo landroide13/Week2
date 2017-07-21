@@ -15,8 +15,8 @@ Bundler.require
 end
 
 
-post '/submit' do
-  new_item = {name: params["item_name"], status: params["done"]}
+post '/add' do
+  new_item = {name: params["task"], status: params["done"]}
   
   File.open("todo.md","a") do |f|
     if new_item[:status]
