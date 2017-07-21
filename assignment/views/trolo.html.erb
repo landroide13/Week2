@@ -11,14 +11,25 @@
 <div class="square">
 
   <h2>Today</h2>
-  
-  <form>
+
+  <!-->
   <div class="item">
       <button class="btn" value="Done"></button>
       <div class="item-text"><%= params %></div>
-  </div>
+  </div>  -->
 
-  <input class="textIn" type="text" placeholder="Add a card..">
+  <ul>
+  <% items.each do |item| %>
+    <li class="<%= item[:status] %>">
+      <%= item[:name] %>
+    </li>
+  <% end %>
+</ul>  
+
+
+  <form acttion="/add" methods="post">
+  <input type="submit" class="btn">
+  <input class="textIn" type="text" placeholder="Add a..">
 
   </form>
 

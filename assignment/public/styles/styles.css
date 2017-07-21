@@ -69,20 +69,3 @@ h2{
   text-align: center; 
 }
 
-li{
-  font-size: 19px;
-  color: #DDE3E8;
-  list-style-type: none
-}
-
-.be-blue{
-  color: #1CA5DB;
-  font-size: 20px;
-  text-decoration-style: none;
-}
-
-
-.to-right{
-  display: inline;
-  float: right;
-}
