@@ -32,7 +32,7 @@ post '/add' do
   
   File.open("todo.md","a") do |f|
       f << "\n"
-      f << "- [ ] " + new_item[:name]
+      f << "- [ ]  " + new_item[:name]
     end
   puts params
   redirect to("/")
