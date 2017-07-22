@@ -32,7 +32,7 @@ post '/add' do
   
   File.open("todo.md","a") do |f|
       f << "\n"
-      f << "- [ ]" + new_item[:name]
+      f << "- [ ] " + new_item[:name]
     end
   puts params
   redirect to("/")
@@ -57,9 +57,9 @@ post '/update' do
   File.open("todo.md","w") do |f|
       items.each do |item|
         if item[:status] == "done"
-          f << "- [x] "+item[:name]+"\n"
+          f << "- [x] " + item[:name]+" \n"
         else
-          f << "- [ ] "+item[:name]+"\n"   
+          f << "- [ ] " + item[:name]+" \n"   
         end
      end
   end
