@@ -14,7 +14,15 @@ require 'shotgun'
     }
   end
 
-  #sort
+  #Sort.......
+  if params["sort"] == "As"
+    items = items.sort_by {|e| e|:name|}
+  elsif params["sort"] == "Des"
+    items = items.sort_by {|e| e|:name|}.reverse
+  else
+    items = items.sort_by {|e| e|:status|}
+  end    
+
 
   erb :"trolo.html" , locals:{items:items}
 end
