@@ -1,7 +1,6 @@
-- [x]                                         
-- [x]                                         try010
-- [x]                       
-- [x]                                         try06
-- [x]                                         try05
-- [x]                                         try09
-- [x]                       try011
+- [ ]          Learn Hash.
+- [ ]          Learn Methods.
+- [ ]          Learn Proc. 
+- [ ]          Learn Varibles.
+- [ ]          Learn Rails
+- [x]          Learn Class.

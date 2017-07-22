@@ -2,7 +2,7 @@
   <head>
     <title>Lab 2-3b</title>
     
-   <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
+   <link rel="stylesheet" href="/styles/styles.css"> -->
   </head>
   <body>
     
@@ -11,21 +11,19 @@
 <div class="square">
 
   <h2>Today</h2>
-
+<div class="list-container">
   <form action="/update" method="post">
-  <ul class="list">
-  <% items.each_with_index do |item| %>
-    <%= erb :"_item.html", locals: {item: item, sort: params["sort"]} %>
-    <% end %>
-</ul>  
-</form>
-
+     <ul class="list">
+       <button class="btn2" type="submit" >Save</button>
+      <% items.each_with_index do |item| %>
+         <%= erb :"_item.html", locals: {item: item, sort: params["sort"]} %>
+      <% end %>
+      </ul>  
+   </form>
+ </div>
 
   <form action="/add" method="post">
-
-  <input type="submit" class="btn">
-  <input class="textIn" type="text" name="name" placeholder="Add a..">
-
+     <input class="textIn" type="text" name="name" placeholder="Add a..">
   </form>
 
 </div>
