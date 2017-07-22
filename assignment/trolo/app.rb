@@ -19,7 +19,7 @@ require 'shotgun'
        items = items.sort_by {|e| e[:name]}
     elsif params["sort"] == "Des"
        items = items.sort_by {|e| e[:name]}.reverse
-    elsif sort == "status"
+    elsif #sort == "status"
       items = items.sort_by {|e| e[:status]}
   end    
     erb :"trolo.html" , locals:{items:items}
