@@ -38,9 +38,9 @@ post '/update' do
   if params["btn"]
     index = params["btn"].to_i
     if items[index][:status] == "done"
-       items[index][:status] == "undone"
+       items[index][:status] = "undone"
     else
-      items[index][:status] == "done"  
+      items[index][:status] = "done"  
     end
   end
 
@@ -48,9 +48,9 @@ post '/update' do
   File.open("todo.md","w") do |f|
       items.each do |item|
         if item[:status] == "done"
-          f << "- [x] " +item[:name] +"\n"
+          f << "- [x] " +item[:name] + "\n"
         else
-          f << "- [ ] " +item[:name] +"\n"   
+          f << "- [ ] " +item[:name] + "\n"   
         end
      end
   end
