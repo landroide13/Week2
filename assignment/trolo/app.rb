@@ -1,5 +1,6 @@
-require "bundler/setup"
-Bundler.require
+
+require 'sinatra'
+require 'shotgun'
 
 
  get "/" do
@@ -29,3 +30,17 @@ post '/add' do
     redirect to("/")
   end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
