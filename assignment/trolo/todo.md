@@ -5,5 +5,3 @@
 - [x]         Learn Hash.             
 - [ ]         Learn Rails             
 - [ ]         Learn Cuba         
-
-- [ ]  try02
