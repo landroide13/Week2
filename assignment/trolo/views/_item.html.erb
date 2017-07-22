@@ -1,5 +1,8 @@
 
-<li>
-<input type="hidden" value="<%= item.name %>" name="items[][name]">
-<input type="hidden" value="<%= item.status %>" name="items[][status]">
+
+<li class="<%= item[:status] %>">
+      <%= item[:name] %>
+      <input type="hidden" value="<%= item[:name]%>" name="items[][name]" >
+      <input type="hidden" value="<%= item[:status]%>" name="items[][status]" >
+      <button class="btn" type="submit" value="<%= item[:index]%>" name="btn">Check</button>
 </li>

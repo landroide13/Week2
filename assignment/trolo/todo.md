@@ -1,7 +1,7 @@
-- [x]                         try05
-- [x]                         try06
-- [ ]                         try010
-- [x]       
-- [ ]                         
-- [ ]       try011
-- [ ]                         try09
+- [x]                                         
+- [x]                                         try010
+- [x]                       
+- [x]                                         try06
+- [x]                                         try05
+- [x]                                         try09
+- [x]                       try011

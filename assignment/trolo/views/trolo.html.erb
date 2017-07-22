@@ -13,15 +13,10 @@
   <h2>Today</h2>
 
   <form action="/update" method="post">
-  <ul>
-  <% items.each do |item| %>
-    <li class="<%= item[:status] %>">
-      <%= item[:name] %>
-      <input type="hidden" value="<%= item[:name]%>" name="items[][name]" >
-      <input type="hidden" value="<%= item[:status]%>" name="items[][status]" >
-      <button class="btn" type="submit" value="<%= item[:index]%>" name="btn">Check</button>
-    </li>
-  <% end %>
+  <ul class="list">
+  <% items.each_with_index do |item| %>
+    <%= erb :"_item.html", locals: {item: item, sort: params["sort"]} %>
+    <% end %>
 </ul>  
 </form>
 
