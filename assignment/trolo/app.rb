@@ -14,7 +14,7 @@ require 'shotgun'
     }
   end
 
-  #Sort.......
+  #Sort....
   if params["sort"] == "As"
     items = items.sort_by {|e| e|:name|}
   elsif params["sort"] == "Des"
@@ -22,11 +22,10 @@ require 'shotgun'
   else
     items = items.sort_by {|e| e|:status|}
   end    
-
-
   erb :"trolo.html" , locals:{items:items}
 end
 
+#..............................................
 
 post '/add' do
   new_item = {name: params["name"], status: params["done"]}
@@ -38,6 +37,8 @@ post '/add' do
   puts params
   redirect to("/")
 end
+
+#................................................
 
 post '/update' do
   puts "params :#{params}"
