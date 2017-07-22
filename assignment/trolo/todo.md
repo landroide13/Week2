@@ -1,7 +1,7 @@
-- [ ]    Learn Rails        
-- [x]    Learn Methods.        
-- [ ]    Learn Cuba    
-- [ ]    Learn Hash.        
-- [ ]    Learn Class.        
-- [ ]    Learn Proc.         
-- [ ]    Learn Varibles.        
+- [x]        Learn Proc.             
+- [x]        Learn Class.            
+- [x]        Learn Methods.            
+- [x]        Learn Varibles.            
+- [ ]        Learn Cuba        
+- [x]        Learn Hash.            
+- [ ]        Learn Rails            

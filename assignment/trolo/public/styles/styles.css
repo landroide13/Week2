@@ -21,15 +21,15 @@ h2{
 .square{
   width: 30%;
   margin-left: 25px;
-  padding: 2px;
+  padding: 0px;
+  text-align: left;
   background-color:#DDE3E8;
   border-radius: 3px;
 }
 
 .item{
-  margin: 5px 15px 5px 15px;
-  padding: 5px 15px 5px 5px;
-  text-align: inline-block;
+  margin: 5px 15px 5px 0px;
+  padding: 5px 15px 5px 0px;
   background-color:#fff;
   box-shadow: 0px 0.8px 0px 0px;
   border-radius: 5px;
@@ -37,7 +37,8 @@ h2{
 
 .textIn{
   width: 99%;
-  height: 30px;
+  height: 5%;
+  padding-bottom: 0px;
   background-color:#DDE3E8;
   color: #000;
   border-style: none;
@@ -46,13 +47,13 @@ h2{
 
 
 .btn{
-  color: #1CA5DB;
+  color: #fff;
   font-weight: bold;
   font-size: 15px;
-  margin-right: 0px;
+  margin-left: 150px;
   margin-top: 15px;
-  background-color: #fff;
-  border-style: none;
+  background-color: #1CA5DB;
+  border-style:none;
   border-radius: 3px;
   cursor: pointer;
   
