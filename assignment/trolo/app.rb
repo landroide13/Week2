@@ -16,11 +16,11 @@ require 'shotgun'
 
   #Sort....
   if params["sort"] == "As"
-    items = items.sort_by {|e| e|:name|}
+    items = items.sort_by {|e| e[:name]}
   elsif params["sort"] == "Des"
-    items = items.sort_by {|e| e|:name|}.reverse
+    items = items.sort_by {|e| e[:name]}.reverse
   else
-    items = items.sort_by {|e| e|:status|}
+    items = items.sort_by {|e| e[:status]}
   end    
   erb :"trolo.html" , locals:{items:items}
 end
@@ -57,9 +57,9 @@ post '/update' do
   File.open("todo.md","w") do |f|
       items.each do |item|
         if item[:status] == "done"
-          f << "- [x] " +item[:name] + "\n"
+          f << "- [x] "+item[:name]+"\n"
         else
-          f << "- [ ] " +item[:name] + "\n"   
+          f << "- [ ] "+item[:name]+"\n"   
         end
      end
   end
