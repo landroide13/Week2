@@ -1,12 +1,4 @@
-- [x] Learn Form element.
-- [x] Learn input text element.
-- [ ] Learn Sinatra params.
-- [ ] Load data from file.
-- [x] Load Add something.
-- [x]notdone?
-- [ ]hello
-- [ ]try1
-- [ ]try2
-- [x]try3
-- [ ]hello
-- [ ]
+
+- [ ]try02
+- [ ]try03
+- [ ]try4

@@ -12,19 +12,24 @@
 
   <h2>Today</h2>
 
+  <form action="/update" method="post">
   <ul>
   <% items.each do |item| %>
     <li class="<%= item[:status] %>">
-      <%= item[:name] %><input class="btn" type="submit" value="<%= item[:status] %>">
+      <%= item[:name] %>
+      <input type="hidden" value="<%= item[:name]%>" name="item[][name]" >
+      <input type="hidden" value="<%= item[:status]%>" name="item[][status]" >
+      <button class="btn" type="submit" value="<%= item[:index]%>"name="btn">check</button>
     </li>
   <% end %>
 </ul>  
+</form>
 
 
   <form action="/add" method="post">
 
   <input type="submit" class="btn">
-  <input class="textIn" type="text" name="task" placeholder="Add a..">
+  <input class="textIn" type="text" name="name" placeholder="Add a..">
 
   </form>
 

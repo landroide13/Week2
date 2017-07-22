@@ -6,32 +6,57 @@ require 'shotgun'
  get "/" do
   lines = File.read("todo.md").split("\n")
 
-  items = lines.map do |line|
-    status = line[3] == "x" ? "done" : "undone"
-    name = line[5..-1]
-
-    {name: name, status: status}
+  items = lines.map.with_index do |line , index|
+    {
+     name: line[5..-1],
+     status: (line[3] == "x") ? "done" : "undone",
+     index: index
+    }
   end
+
+  #sort
+
   erb :"trolo.html" , locals:{items:items}
 end
 
 
 post '/add' do
-  new_item = {name: params["task"], status: params["done"]}
+  new_item = {name: params["name"], status: params["done"]}
   
   File.open("todo.md","a") do |f|
-    if new_item[:status]
-    f << "\n"
-    f << "- [x]"+new_item[:name]
-    else
-    f << "\n"
-    f << "- [ ]"+new_item[:name]
+      f << "\n"
+      f << "- [ ]" + new_item[:name]
     end
-    redirect to("/")
-  end
+  puts params
+  redirect to("/")
 end
 
+post '/update' do
+  puts "params :#{params}"
+  items = params["items"]
+  
+  if params["btn"]
+    index = params["btn"].to_i
+    if items[index][:status] == "done"
+       items[index][:status] == "undone"
+    else
+      items[index][:status] == "done"  
+    end
+  end
 
+  
+  File.open("todo.md","w") do |f|
+      items.each do |item|
+        if item[:status] == "done"
+          f << "- [x] " +item[:name] +"\n"
+        else
+          f << "- [ ] " +item[:name] +"\n"   
+        end
+     end
+  end
+  redirect back
+
+  end 
 
 
 
