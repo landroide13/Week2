@@ -1,10 +1,6 @@
+- [ ]Learn Proc.                               
+- [x]Learn Class.
 - [x]Learn Varibles.                     
-- [x]Learn Ruboto
-- [x]Learn Sinatra
-- [x]Learn Proc.                               
-- [ ]Learn Methods.                              
+- [ ]Learn Rails.                              
 - [ ]Learn Hash.                              
-- [ ]
-- [ ]Learn Hanami
-- [x]Learn Rails.                              
-- [ ]Learn Mruby
+- [ ]Learn Methods.                              
