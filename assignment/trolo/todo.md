@@ -1,7 +1,10 @@
-- [x]         Learn Varibles.             
-- [x]         Learn Class.             
-- [x]         Learn Methods.             
-- [ ]         Learn Proc.              
-- [x]         Learn Hash.             
-- [ ]         Learn Rails             
-- [ ]         Learn Cuba         
+- [x]Learn Varibles.                     
+- [x]Learn Ruboto
+- [x]Learn Sinatra
+- [x]Learn Proc.                               
+- [ ]Learn Methods.                              
+- [ ]Learn Hash.                              
+- [ ]
+- [ ]Learn Hanami
+- [x]Learn Rails.                              
+- [ ]Learn Mruby

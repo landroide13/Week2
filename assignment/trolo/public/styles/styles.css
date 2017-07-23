@@ -17,23 +17,50 @@ h2{
  padding-top: 10px;
 }
 
+.btn2{
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #1CA5DB;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
 
 .square{
-  width: 30%;
+  width: 25%;
   margin-left: 25px;
-  text-align: left;
+  padding:0px;
   background-color:#DDE3E8;
   border-radius: 3px;
 }
 
+/*............................*/
+
 .item{
-  margin: 5px 15px 5px 5px;
-  padding: 5px 15px 5px 5px;
   background-color:#fff;
+  padding: 5px 15px 5px 5px;
+  margin: 5px 5px 5px 5px;
   box-shadow: 0px 0.8px 0px 0px;
   border-radius: 5px;
-  display: inline-block;
+  display: inline;
 }
+
+.btn{
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #1CA5DB;
+  border-style: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: yellow;
+}
+
+/*...........................*/
 
 .textIn{
   width: 100%;
@@ -47,30 +74,6 @@ h2{
 }
 
 
-.btn{
-  color: #fff;
-  font-weight: bold;
-  font-size: 15px;
-  margin-left: 150px;
-  margin-top: 15px;
-  background-color: #1CA5DB;
-  border-style:none;
-  border-radius: 3px;
-  cursor: pointer;
-  
-}
-
-.btn:hover{
-  background-color: yellow;
-}
-
-
-.front{
-  margin: 100px 400px 100px 200px;
-  text-align: center; 
-}
-
-
 .list{
   list-style: none;
 } 
@@ -78,3 +81,7 @@ h2{
 .done{
   text-decoration:line-through; 
 }
+
+
+
+

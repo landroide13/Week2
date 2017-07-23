@@ -1,8 +1,8 @@
 <html>
   <head>
-    <title>Lab 2-3b</title>
+    <title>MyApp</title>
     
-   <link rel="stylesheet" href="/styles/styles.css">
+  <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
   </head>
   <body>
     
@@ -13,9 +13,9 @@
   <h2>Today</h2>
 <div class="list-container">
   <form action="/update" method="post">
+  <button class="btn2" type="submit" >Save</button>
      <ul class="list">
-       <button class="btn2" type="submit" >Save</button>
-      <% items.each_with_index do |item| %>
+      <% items.each_with_index do |item,index| %>
          <%= erb :"_item.html", locals: {item: item, sort: params["sort"]} %>
       <% end %>
       </ul>  
