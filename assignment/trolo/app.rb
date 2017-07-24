@@ -15,26 +15,14 @@ require 'shotgun'
   end 
 
   #Sort........................................
-  
-  if params["sort"] == "As"
-       items = items.sort_by {|e| e[:name]}
-    elsif params["sort"] == "Des"
-       items = items.sort_by {|e| e[:name]}.reverse
-    elsif #sort == "status"
-      items = items.sort_by {|e| e[:status]}
-  end    
-    erb :"trolo.html" , locals:{items:items}
- end 
-
-#..............................................
 
 post '/add' do
   new_item = {name: params["name"], status: params["done"]}
   
-  File.open("todo.md","a") do |f|
-      f << "\n"
-      f << "- [ ]" + new_item[:name]
-    end
+  File.open("todo.md", "a") do |f|
+    f << "\n"
+    f << "- [ ]" + new_item[:name]
+  end
   puts params
   redirect to("/")
 end
@@ -44,9 +32,9 @@ def save
   File.open("todo.md","w") do |f|
       items.each do |item|
         if item[:status] == "done"
-          f << "- [x]" + item[:name]+"\n"
+          f << "- [x]" + item[:name].strip + "\n"
         else
-          f << "- [ ]" + item[:name]+"\n"   
+          f << "- [ ]" + item[:name].strip + "\n"   
         end
      end
   end

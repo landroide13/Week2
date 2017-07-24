@@ -1,6 +1,6 @@
+- [ ]Learn Varibles.                     
 - [ ]Learn Proc.                               
-- [x]Learn Class.
-- [x]Learn Varibles.                     
-- [ ]Learn Rails.                              
 - [ ]Learn Hash.                              
-- [ ]Learn Methods.                              
+- [ ]Learn Methods.                            
+- [ ]Learn Class.
+- [ ]Learn Rails.                              

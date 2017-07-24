@@ -3,6 +3,7 @@
     <title>MyApp</title>
     
   <!-- <link rel="stylesheet" href="/styles/styles.css"> -->
+  <style>.done {text-decoration: line-through}</style>
   </head>
   <body>
     
@@ -13,12 +14,13 @@
   <h2>Today</h2>
 <div class="list-container">
   <form action="/update" method="post">
-  <button class="btn2" type="submit" >Save</button>
-     <ul class="list">
-      <% items.each_with_index do |item,index| %>
+    <button class="btn2" type="submit" >Save</button>
+     <%= items %>
+    <ul class="list">
+      <% items.each do |item| %>
          <%= erb :"_item.html", locals: {item: item, sort: params["sort"]} %>
       <% end %>
-      </ul>  
+    </ul>  
    </form>
  </div>
 
