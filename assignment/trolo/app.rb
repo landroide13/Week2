@@ -14,8 +14,6 @@ require 'shotgun'
     }
   end 
 
-  #Sort........................................
-
 post '/add' do
   new_item = {name: params["name"], status: params["done"]}
   
